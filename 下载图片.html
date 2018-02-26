@@ -1,0 +1,20 @@
+<html>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<head>
+    <script>
+        function download(src) {
+            var $a = document.createElement('a');
+            $a.setAttribute("href", src);
+            $a.setAttribute("download", "");
+
+            var evObj = document.createEvent('MouseEvents');
+            evObj.initMouseEvent( 'click', true, true, window, 0, 0, 0, 0, 0, false, false, true, false, 0, null);
+            $a.dispatchEvent(evObj);
+        };
+    </script>
+</head>
+<body>
+<div>
+</div>
+</body>
+</html>
